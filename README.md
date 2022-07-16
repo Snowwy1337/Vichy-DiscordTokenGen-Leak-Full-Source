@@ -1,5 +1,10 @@
 # Vichy-DiscordTokenGen-Leak
 
+**15 STARS AND ILL MAKE THIS SO IT FULLY WORKS WITH THE NEW IMAGE SERVER **
+
+
+
+
 Credits to vichy for making it, and then leaking it himself, then taking the leak down... 
 I removed auth, ur gonna need to fix the rest urself
 
