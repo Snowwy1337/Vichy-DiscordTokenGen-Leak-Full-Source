@@ -9,6 +9,8 @@ Another time when Discord and HCaptcha are getting rect by kid (like me), millio
 
 ---------
 
+Some more kind words from vichy:
+
 Also kinda gay people who suck me to get SRC and then call me "scammer" by a guys who vouch and said all is working 1day ago :,
 + cringe guys who "leak" obfuscated non working old .exe and shit obfuscated solver 😆
 
@@ -27,3 +29,4 @@ Undetected browser for bypassing hcap:
 Tutorial / showcase
 https://www.youtube.com/watch?v=yspeji8i1Sg
 
+vichy's github: https://github.com/Its-Vichy
