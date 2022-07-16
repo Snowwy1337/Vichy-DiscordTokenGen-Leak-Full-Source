@@ -1,4 +1,8 @@
 # Vichy-DiscordTokenGen-Leak
+
+Credits to vichy for making it, and then leaking it himself, then taking the leak down... 
+I removed auth, ur gonna need to fix the rest urself
+
 Words from Vichy himself before he took it down: 
 Enjoy skid.
 Another time when Discord and HCaptcha are getting rect by kid (like me), million $ compagny can't match SAME motionData as spammer.
