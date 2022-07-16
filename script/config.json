@@ -1,0 +1,12 @@
+{
+    "solver_licence": "API-VK26SKC",
+    "server_port": 3000,
+    "softban": true,
+    "dev_mode": true,
+    "image_api": {
+        "address": "node02.proxies.gay",
+        "port": 1338
+    },
+
+    "drop_req": false
+}

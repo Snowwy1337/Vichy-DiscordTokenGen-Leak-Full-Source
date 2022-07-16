@@ -1,0 +1,44 @@
+# credit to https://github.com/QIN2DIM/hcaptcha-challenger, just edit main file to run the server
+# I am not AI dev, Be realistic, it is sometimes useless to reinvent the wheel
+# http://apiIp:apiPort/check/img_type/img_url
+
+from services.hcaptcha_challenger import ArmorCaptcha
+from services.settings import DIR_MODEL, DIR_CHALLENGE
+import requests, base64, random, string, os
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/check/<string:label>/<string:data>')
+def show_post(label, data):
+    challenger = ArmorCaptcha(dir_workspace=DIR_CHALLENGE, lang='en', debug=True)
+    label = base64.b64decode(label).decode()
+
+    # also add new captcha when the chinese update
+    if label not in ["bedroom", "car", "seaplane", "airplane", "motorbus", "bus", "truck", "motorcycle", "boat", "bicycle", "train", "trаin", "vertical river", "airplane in the sky flying left", "the sky flying left", "Please select all airplanes in the sky that are flying to the rіght", "Please select all the elephants drawn with lеaves"]:
+        return 'Invalid label'
+    
+    img_name = "./img/" + ''.join(random.choice(string.ascii_letters) for _ in range(10)) + '.jpg'
+    model = challenger.switch_solution(DIR_MODEL, None)
+
+    with open(img_name, 'wb') as handle:
+        response = requests.get(base64.b64decode(data).decode(), stream=True)
+
+        if not response.ok:
+            return 'Invalid url'
+
+        for block in response.iter_content(1024):
+            if not block:
+                break
+
+            handle.write(block)
+
+    with open(img_name, "rb") as file:
+        data = file.read()
+
+    result = model.solution(img_stream=data, label=challenger.label_alias[label])
+    os.remove(img_name)
+
+    return str(result)
+
+app.run('0.0.0.0', 1337)
