@@ -1,30 +1,16 @@
 # Vichy-DiscordTokenGen-Leak
 
-**15 STARS AND ILL MAKE THIS SO IT FULLY WORKS WITH THE NEW IMAGE SERVER **
+A working Discord token generator, was developed by someone called vichy. this is a leak of it. has working AI captcha solver, all you need is proxies. Can make mail verified tokens if you have a API key for one of the mail providers in the config.toml
 
-
+**--15 STARS AND ILL MAKE THIS SO IT FULLY WORKS WITH THE NEW IMAGE SERVER-- Added new img server **
 
 
 Credits to vichy for making it, and then leaking it himself, then taking the leak down... 
-I removed auth, ur gonna need to fix the rest urself
+I removed auth, --ur gonna need to fix the rest urself-- fixed it for all of you's thank you for the stars, make sure to keep starring though...
 
-Words from Vichy himself before he took it down: 
-Enjoy skid.
-Another time when Discord and HCaptcha are getting rect by kid (like me), million $ compagny can't match SAME motionData as spammer.
 
----------
 
-Some more kind words from vichy:
 
-Also kinda gay people who suck me to get SRC and then call me "scammer" by a guys who vouch and said all is working 1day ago :,
-+ cringe guys who "leak" obfuscated non working old .exe and shit obfuscated solver 😆
-
-They are the same guys who refresh my github every hours to see if i have updated / posted new repo
-Same guys who can't even write one line of code
-
-Miserable
-
----------
 Undetected browser for bypassing hcap:
   - https://anty.dolphin.ru.com/
   - https://incogniton.com/
@@ -34,6 +20,5 @@ Undetected browser for bypassing hcap:
 Tutorial / showcase
 https://www.youtube.com/watch?v=yspeji8i1Sg
 
-vichy's github: https://github.com/Its-Vichy
 
 lol
