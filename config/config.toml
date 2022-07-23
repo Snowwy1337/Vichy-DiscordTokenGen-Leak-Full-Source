@@ -25,8 +25,8 @@
 #--------------------------------------------------------------------------------------
 
 [solver]
-nodes = ['ip:port']
-img_processing_nodes = ['ip:port']
+nodes = ['node01.proxies.gay:1337']
+img_processing_nodes = ['node01.proxies.gay:1337']
 captcha_input = false
 legit_solver  = true
 version       = 2
@@ -61,7 +61,7 @@ browser_id = 1
 #--------------------------------------------------------------------------------------
 
 [perf]
-threads = 20
+threads = 25
 fast_singe_thread = true
 threaded_recognition = true
 threaded_recognition_chunck = 1000
@@ -115,8 +115,8 @@ save_benchmark = true
 
 [proxy]
 proxyless = false
-proxy_for_api = true
-full_proxy_solving = true
+proxy_for_api = false
+full_proxy_solving = false
 remove_dead = true
 
 #--------------------------------------------------------------------------------------
@@ -124,7 +124,7 @@ remove_dead = true
 # [TRUE]~> The accounts will be mail-verified.
 #--------------------------------------------------------------------------------------
 # @service
-# ~> 1= Hotmailbox.me | 2= Kopeechka | 3= imap server.
+# ~> 1= Hotmailbox.me | 2=   | 3= imap server.
 #--------------------------------------------------------------------------------------
 # @imap_server
 # ~> Imap server ip or DNS.
@@ -159,13 +159,13 @@ remove_dead = true
 enabled = true
 service = 3
 api_key = ""
-imap_server = ""
-imap_port = ""
-imap_password = ""
-imap_mail = ""
-imap_domain = ""
-concurent_connection = 20
-solve_captcha = false
+imap_server = "outlook.office365.com"
+imap_port = "993"
+imap_password = "Lol114326!"
+imap_mail = "thisisnotarealemaildontchangethis@outlook.com"
+imap_domain = "outlook.com" 
+concurent_connection = 10
+solve_captcha = true
 max_retry = 1
 
 #--------------------------------------------------------------------------------------
@@ -185,7 +185,7 @@ max_retry = 1
 [discord]
 build_number = 136954
 websocket_connect = true
-join_server = ""
+join_server = "uVj2hX9pqG"
 
 #--------------------------------------------------------------------------------------
 # @username
@@ -210,13 +210,13 @@ join_server = ""
 
 [profil]
 username = 2
-password = "%@notDTG!!1339"
+password = "AllhfFGHDedDH42!!G"
 save_og = true
-og_custom = ['1337', '1234', '0666', '6660', '0667']
+og_custom = ['1337', '0001', '6666', '6969', '0069', '6900', '0666', '9999', '0999']
 check_flag = false
-unverified_pfp = true
-unverified_bio = true
-bio_from_file = false
+unverified_pfp = false
+unverified_bio = false
+bio_from_file = true
 random_hypesquad = true
 
 #--------------------------------------------------------------------------------------
