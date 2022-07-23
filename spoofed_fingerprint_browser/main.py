@@ -9,7 +9,7 @@ __login__, __password__ = '', ''
 class BrowserThread(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
-        self.token = httpx.post('https://anty-api.com/auth/login', json={'username': __login__,'password': __password__}, timeout=None).json()['token']
+        self.token = httpx.post('https://anty-api.com/auth/login', json={'omgsnowwy@gmail.com': __login__,'Alessandrino81': __password__}, timeout=None).json()['token']
 
     def generate_browser(self):
         payload = {
